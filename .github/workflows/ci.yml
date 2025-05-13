@@ -26,6 +26,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: checkout
+        uses: actions/checkout@v2
       - name: Style
         run: test -z $(go fmt ./...)
       - name: staticcheck
