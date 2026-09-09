@@ -7,7 +7,7 @@ on:
 jobs:
   tests:
     name: Tests
-    runs-on: ubuntu-latest
+    runs-on: [self-hosted, home]
 
     steps:
       - name: Check out code
@@ -27,7 +27,7 @@ jobs:
 
   style:
     name: Style
-    runs-on: ubuntu-latest
+    runs-on: [self-hosted, home]
 
     steps:
       - name: checkout
